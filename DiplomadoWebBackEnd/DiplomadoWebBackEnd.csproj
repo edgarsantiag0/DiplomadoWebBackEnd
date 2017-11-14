@@ -43,19 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clase1\Genericos\Caja.cs" />
+    <Compile Include="Clase2\Genericos\Caja.cs" />
     <Compile Include="Clase1\Herencia\Auto.cs" />
     <Compile Include="Clase1\Herencia\Avion.cs" />
     <Compile Include="Clase1\Herencia\Vehiculo.cs" />
-    <Compile Include="Clase1\Genericos\MetodosGenericos.cs" />
+    <Compile Include="Clase2\Genericos\MetodosGenericos.cs" />
     <Compile Include="Clase1\PreProcesadores\PreProcesadores.cs" />
+    <Compile Include="Clase2\Sobrecarga.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Clase2\Polimorfismo\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
