@@ -56,7 +56,7 @@ namespace DiplomadoWebBackEnd.Clase1.PreProcesadores
 
             #if (DEBUG == true)
                 Console.WriteLine("Debug is true");
-                #warning C++ compiler required.  
+                #warning debug is true  
                 #line 151 "copy.c" 
 
                 //La directiva
@@ -64,7 +64,7 @@ namespace DiplomadoWebBackEnd.Clase1.PreProcesadores
 
             #else
                 Console.WriteLine("Debug is false");
-                #error C++ compiler required.  
+           // #error Debug is false PreProcesadores.cs
             #endif
 
 

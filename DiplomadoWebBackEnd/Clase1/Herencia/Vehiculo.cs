@@ -17,9 +17,6 @@ namespace DiplomadoWebBackEnd.Clase1.Herencia
 
         private string modelo; 
 
-
-        
-
         // forma explicita de get y set
         public string Modelo
         {

@@ -19,6 +19,8 @@ namespace DiplomadoWebBackEnd
 
             // HERENCIA
 
+   
+
 
             // Se crea un Auto con propiedades como Marca, Color, Que son de la clase Vehiculo
             // y tambien CantidadPuertas y NumeroPlaca que son propias de la clase Auto

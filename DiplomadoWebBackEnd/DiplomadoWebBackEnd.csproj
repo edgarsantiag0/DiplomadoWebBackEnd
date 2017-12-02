@@ -43,22 +43,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal.cs" />
+    <Compile Include="Clase2\Abstractas\Figura.cs" />
+    <Compile Include="Clase2\Abstractas\Transporte.cs" />
+    <Compile Include="Clase2\Arreglos\Arreglos.cs" />
+    <Compile Include="Clase2\Arreglos\Matriz.cs" />
+    <Compile Include="Clase2\Arreglos\MatrizIrregular.cs" />
+    <Compile Include="Clase2\Delegados\DelegadoMulticast.cs" />
+    <Compile Include="Clase2\Delegados\Delegados1.cs" />
+    <Compile Include="Clase2\Delegados\DelegateAppl.cs" />
+    <Compile Include="Clase2\Eventos.cs" />
     <Compile Include="Clase2\Genericos\Caja.cs" />
     <Compile Include="Clase1\Herencia\Auto.cs" />
     <Compile Include="Clase1\Herencia\Avion.cs" />
     <Compile Include="Clase1\Herencia\Vehiculo.cs" />
     <Compile Include="Clase2\Genericos\MetodosGenericos.cs" />
     <Compile Include="Clase1\PreProcesadores\PreProcesadores.cs" />
+    <Compile Include="Clase2\Indizadores\Indizador.cs" />
+    <Compile Include="Clase2\Interfaces\IFigura.cs" />
+    <Compile Include="Clase2\Interfaces\ITransaccion.cs" />
+    <Compile Include="Clase2\namespaces\Espacio1.cs" />
+    <Compile Include="Clase2\RedefinicionOperadores\Complejo.cs" />
     <Compile Include="Clase2\Sobrecarga.cs" />
+    <Compile Include="Clase3\Enums\Enumeraciones.cs" />
+    <Compile Include="Clase3\Estructuras\Point.cs" />
+    <Compile Include="Clase3\Eventos\Eventos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clase2\Polimorfismo\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
