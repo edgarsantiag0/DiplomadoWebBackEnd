@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,9 +9,9 @@ namespace DiplomadoWebBackEnd.Clase3.Enums
 {
     enum Tamaño : int
     {
-        Pequeño = 0,
-        Mediano = 1,
-        Grande = 2
+        Pequeño = 1,
+        Mediano = 4,
+        Grande = 10
     }
 
     // Por defecto al ser entero su valor es cero
@@ -35,6 +36,8 @@ namespace DiplomadoWebBackEnd.Clase3.Enums
     public class PruebaEnum
     {
 
+        Switch()
+
 
         public void Play()
         {
@@ -47,6 +50,7 @@ namespace DiplomadoWebBackEnd.Clase3.Enums
 
             t = (Tamaño) 100;           // Ahora t vale 100, que no se corresponde con ningún literal 
            
+           
 
         }
 
@@ -54,3 +58,9 @@ namespace DiplomadoWebBackEnd.Clase3.Enums
 
     }
 }
+
+
+// Empleado.... tipoDocumento
+// Enum TipoDocumento... Pasaporte, Cedula, Licencia, otros
+// manejar un metodo dependiendo el tipo de documento
+
