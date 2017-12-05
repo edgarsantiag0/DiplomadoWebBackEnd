@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiplomadoWebBackEnd", "DiplomadoWebBackEnd\DiplomadoWebBackEnd.csproj", "{175DEB28-496D-4220-A681-964BDD180A13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsandoWebForms", "UsandoWebForms\UsandoWebForms.csproj", "{1D858287-D44E-4203-9669-0F4AFA2EB116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsProject", "WebFormsProject\WebFormsProject.csproj", "{DFD3E89F-6538-4BE9-8669-118725907C26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{175DEB28-496D-4220-A681-964BDD180A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{175DEB28-496D-4220-A681-964BDD180A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{175DEB28-496D-4220-A681-964BDD180A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D858287-D44E-4203-9669-0F4AFA2EB116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D858287-D44E-4203-9669-0F4AFA2EB116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D858287-D44E-4203-9669-0F4AFA2EB116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D858287-D44E-4203-9669-0F4AFA2EB116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD3E89F-6538-4BE9-8669-118725907C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD3E89F-6538-4BE9-8669-118725907C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD3E89F-6538-4BE9-8669-118725907C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD3E89F-6538-4BE9-8669-118725907C26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

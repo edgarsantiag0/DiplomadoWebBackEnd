@@ -7,14 +7,6 @@ using System.Threading.Tasks;
 
 namespace DiplomadoWebBackEnd.Clase3.Eventos
 {
-    class Eventos
-    {
-
-
-        // Ejemplo de notifcar cuando una codificacion termine
-
-    }
-
     class Video
     {
         public String Titulo { get; set; }
@@ -31,24 +23,18 @@ namespace DiplomadoWebBackEnd.Clase3.Eventos
         public event VideoEncodedEventHandler VideoEncoded;
 
       //  public event EventHandler<VideoEventArgs> VideoEncoded; una forma mas corta de definir un evento sin delegado
-
-
         public void Encode(Video video)
         {
             Console.WriteLine("Codificando video...");
             Thread.Sleep(3000);
 
-            OnVideoEncoded(); // send the video here
+            OnVideoEncoded(video); // send the video here
         }
-
-
         // por convencion: virtual para que pueda ser sobreescrito en clases derivadas
-
-        protected virtual void OnVideoEncoded() // video como parametro
+        protected void OnVideoEncoded(Video video) // video como parametro
         {
             if(VideoEncoded != null)
                 VideoEncoded(this, EventArgs.Empty); // new VideoEventArgs(){Video: video}
-
         }
 
     }
@@ -60,8 +46,8 @@ namespace DiplomadoWebBackEnd.Clase3.Eventos
 
             var video = new Video() { Titulo = "Video 1" };
             var videoEncoder = new VideoEncoder(); // publisher
-            var mailService = new MailService(); // subscriber
-            var messageService = new MessageService(); // subscriber
+            var mailService = new MailService(); // subscriber1
+            var messageService = new MessageService(); // subscriber2
 
             videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
             videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
@@ -69,18 +55,15 @@ namespace DiplomadoWebBackEnd.Clase3.Eventos
 
             videoEncoder.Encode(video);
 
-
-
-
-
         } 
-    }
+    } 
 
     class MailService
     {
 
-        public void OnVideoEncoded(object source, EventArgs args) //VideoEventArgs
+        public void OnVideoEncoded(object source, VideoEventArgs args) //VideoEventArgs
         {
+            // args.video.Titulo
             Console.WriteLine("MailService: Enviando email...");
         }
 
@@ -89,7 +72,7 @@ namespace DiplomadoWebBackEnd.Clase3.Eventos
     class MessageService
     {
 
-        public void OnVideoEncoded(object source, EventArgs args) //VideoEventArgs
+        public void OnVideoEncoded(object source, VideoEventArgs args) //VideoEventArgs
         {
             Console.WriteLine("MessageService: Enviando mensaje de texto...");
         }
@@ -98,8 +81,14 @@ namespace DiplomadoWebBackEnd.Clase3.Eventos
 
     class VideoEventArgs : EventArgs
     {
-        
         public Video video { get; set; }
     }
 
 }
+
+
+
+// Ejercicio
+
+   // Empleado {nombre, apellido, sueldo}
+   // Evento que notifique si sus propiedades cambiaron
